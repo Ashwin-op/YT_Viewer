@@ -1,5 +1,5 @@
 # YT_Viewer
-A simple flask application for viewing youtube videos. Note: It's a WIP.
+A simple flask application for viewing youtube videos (Only for Windows as of now). Note: It's a WIP.
 
 # Instructions
 - Download the .exe from releases.

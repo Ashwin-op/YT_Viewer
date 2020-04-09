@@ -1,0 +1,14 @@
+{% extends "header.html" %}
+
+{% block title %}Youtube Viewer/Downloader{% endblock %}
+
+{% block section %}
+    <div class="display-4 mt-5">Enter Keyword(s)</div>
+    <div class="container">
+        <form method="post" autocomplete="off">
+            <label for="searchBox"></label>
+            <input name="query" id="searchBox" class="form-control" type="text" placeholder="Default input">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+{% endblock %}

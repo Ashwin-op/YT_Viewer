@@ -1,0 +1,28 @@
+{% extends "header.html" %}
+
+{% block title %}Youtube Viewer/Downloader{% endblock %}
+
+{% block section %}
+    <table class="table table-borderless table-hover">
+        <thead class="thead-light">
+        <tr>
+            <th scope="col">Title</th>
+            <th scope="col">Thumbnail</th>
+            <th scope="col">View</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for id, title, thumbnail, url in info %}
+            <tr>
+                <td>{{ title }}</td>
+                <td>
+                    <figure class="figure">
+                        <img src="{{ thumbnail }}" class="figure-img img-fluid rounded" alt="thumbnail">
+                    </figure>
+                </td>
+                <td><a href="/YouTube/{{ id }}">Here</a></td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
